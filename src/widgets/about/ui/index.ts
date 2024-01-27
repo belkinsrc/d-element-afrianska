@@ -1,6 +1,6 @@
 import './index.scss'
-import illustration from '/images/illustration.svg'
-import { block } from '@/shared/lib'
+import illustration from '@/shared/assets/images/illustration.svg'
+import { block, extraClasses } from '@/shared/lib'
 import { AboutUs } from '@/shared/ui/about-us'
 
 function About() {
@@ -11,7 +11,7 @@ function About() {
 
   return `
     <div class="${getClassName()}">
-      <div class="${getClassName('container')}">
+      <div class="${extraClasses.container}">
         ${AboutUs()}
         <img class="${getClassName('illustration')}" 
              src="${illustration}" 

@@ -1,0 +1,77 @@
+.service-card {
+  max-width: 380px;
+  padding: 48px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 5px 20px 50px 0px rgba(16, 112, 177, 0.2);
+
+  @media (min-width: 1024px) {
+    &--type-famous {
+      position: absolute;
+      top: 50%;
+      left: 80px;
+      transform: translateY(-50%);
+    }
+  }
+
+  @media (max-width: 479px) {
+    padding: 30px;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: calc(30px / 20px) * 100%;
+    letter-spacing: 1px;
+    color: var(--blue1);
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: calc(26px / 16px) * 100%;
+    letter-spacing: 0.8px;
+    color: var(--blue1);
+    opacity: 0.6;
+
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: calc(30px / 14px) * 100%;
+    text-decoration: none;
+    letter-spacing: 0.7px;
+    color: var(--blue4);
+    padding-right: 48px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      right: 0;
+      width: 24px;
+      height: 24px;
+      background-image: url('/icons/arrow.svg');
+      background-size: 24px 24px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__image {
+    margin-bottom: 56px;
+
+    img {
+      position: relative;
+      bottom: 0;
+      left: 26px;
+    }
+  }
+}

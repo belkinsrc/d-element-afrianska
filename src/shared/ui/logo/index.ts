@@ -1,4 +1,4 @@
-import logo from '/icons/logo.svg'
+import logo from '@/shared/assets/icons/logo.svg'
 import { block } from '@/shared/lib'
 
 function Logo() {

@@ -5,3 +5,7 @@ export const block = setup({
     mod: '--',
     modValue: '-'
 });
+
+export const extraClasses = {
+  container: 'container'
+}
