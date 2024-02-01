@@ -1,0 +1,36 @@
+.client {
+  position: relative;
+  padding: 41px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--clients-more {
+    background-color: rgba(31, 63, 104, 0.2)
+  }
+
+  @media (min-width: 1024px) {
+    &:not(:nth-child(4n))::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 1px;
+      height: 100%;
+      background-color: #fff;
+      opacity: 0.5;
+    }
+  
+    &:nth-child(4n)::after {
+      display: none;
+    } 
+  }
+
+  &__link {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: calc(46px / 20px) * 100%;
+    letter-spacing: 0.4px;
+    color: #f2f2f2;
+  }
+}

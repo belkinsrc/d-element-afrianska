@@ -1,0 +1,31 @@
+.interest {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  max-width: 460px;
+
+  &__title {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: calc(46px / 36px) * 100%;
+    letter-spacing: 1.8px;
+    color: #fff;
+
+    @media (min-width: 1024px) {
+      max-width: 319px;
+    }
+    
+    @media (max-width: 479px) {
+      font-size: 31px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: calc(26px / 16px) * 100%;
+    letter-spacing: 0.8px;
+    color: #fff;
+    opacity: 0.6;
+  }
+}

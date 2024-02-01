@@ -1,3 +1,4 @@
+import './index.scss'
 import { block } from '@/shared/lib'
 
 function MenuBurger() {

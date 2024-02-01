@@ -1,3 +1,4 @@
+import './index.scss'
 import logo from '@/shared/assets/icons/logo.svg'
 import { block } from '@/shared/lib'
 
@@ -9,7 +10,7 @@ function Logo() {
 
   return `
     <a class="${getClassName()}" href="#">
-      <img class="${getClassName('icon')}" src="${logo}" alt="logo" />
+      <img class="${getClassName('icon')}" src="${logo}" alt="Afrianska logo" />
     </a>
   `
 }
