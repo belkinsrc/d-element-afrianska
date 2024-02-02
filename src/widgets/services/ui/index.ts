@@ -1,4 +1,7 @@
 import './index.scss'
+import famous from '@/shared/assets/images/famous.svg'
+import digital from '@/shared/assets/images/digital.svg'
+import technology from '@/shared/assets/images/technology.svg'
 import { block, extraClasses } from '@/shared/lib'
 import { ServiceCard } from '@/entities/service-card'
 
@@ -19,14 +22,17 @@ function Services() {
           ${ServiceCard({
             classMod: { type: 'famous' },
             title: 'Make Your business To Be Better Famous In Internet',
-          })}
-          ${ServiceCard({
-            classMod: { type: 'digital' },
-            title: 'Make Your business To Be Better Famous In Internet',
+            image: famous
           })}
           ${ServiceCard({
             classMod: { type: 'technology' },
-            title: 'Make Your business To Be Better Famous In Internet',
+            title: 'Bring Technology To Your Comfrotable Home',
+            image: technology
+          })}
+          ${ServiceCard({
+            classMod: { type: 'digital' },
+            title: 'Build Your Digital Product That Suitable For Your Need',
+            image: digital
           })}
         </div>
       </div>

@@ -15,7 +15,11 @@ function Footer() {
       <div class="${getClassName('top')}">
         <div class="${extraClasses.container} ${getClassName('container-top')}">
           ${Interest()}
-          ${Button({ value: 'Let’s Talk', className: getClassName('button') })}
+          ${Button({
+            value: 'Let’s Talk',
+            className: getClassName('button'),
+            extraAttrs: 'data-open-form-btn',
+          })}
         </div>
       </div>
       <div class="${getClassName('bottom')}">
@@ -42,12 +46,12 @@ function Footer() {
             ${FooterContacts({
               title: 'About US',
               items: ['About', 'What We Do', 'Project', 'How It Work With Us'],
-              className: getClassName('contacts', {about: true})
+              className: getClassName('contacts', { about: true }),
             })}
             ${FooterContacts({
               title: 'Follow US',
               items: ['Instagram', 'Facebook', 'LinkedIn', 'Youtube'],
-              className: getClassName('contacts', {follow: true})
+              className: getClassName('contacts', { follow: true }),
             })}
           </div>
           <small class="${getClassName('copyright')}">

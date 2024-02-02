@@ -3,7 +3,7 @@ import { About } from '@/widgets/about'
 import { Services } from '@/widgets/services'
 import { Clients } from '@/widgets/clients'
 import { Footer } from '@/widgets/footer'
-import { Form } from '@/entities/form'
+import { Overlay } from '@/widgets/overlay'
 
 function MainPage() {
   return `
@@ -14,8 +14,7 @@ function MainPage() {
       ${Clients()}
     </main>
     ${Footer()}
-
-    ${Form()}
+    ${Overlay()}
   `
 }
 

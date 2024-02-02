@@ -9,7 +9,7 @@ interface CardProps {
 }
 
 function Card({ baseClass, classMod, image, title }: CardProps) {
-
+  
   const getClassName = block(baseClass)
 
   return `
